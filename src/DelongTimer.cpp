@@ -10,6 +10,10 @@ milliTimer::milliTimer(void) {
       msTimer=millis();
 }
 
+milliTimer::milliTimer(int32_t msFromNow) {
+      msTimer=millis()+msFromNow;
+}
+
 void milliTimer::set(int32_t msFromNow) {
       msTimer=millis()+msFromNow;
 }
