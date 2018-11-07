@@ -1,6 +1,6 @@
 /*
 Simple Arduino timer class to simplify state machine timing
-in order to avoid using delays
+in order to avoid using delay functions
 */
 
 #include <Arduino.h>
