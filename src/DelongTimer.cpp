@@ -6,7 +6,7 @@ while avoiding delays
 #include <Arduino.h>
 #include "DelongTimer.h"
 
-milliTimer::milliTimer() {
+milliTimer::milliTimer(void) {
       msTimer=millis();
 }
 
