@@ -1,3 +1,8 @@
+/*
+Simple Arduino timer class to simplify state machine timing
+while avoiding delays
+*/
+
 #include <Arduino.h>
 #include "DelongTimer.h"
 
