@@ -7,7 +7,7 @@ while avoiding delays
 #include "DelongTimer.h"
 
 milliTimer::milliTimer() {
-      msTimer=milles();
+      msTimer=millis();
 }
 
 void milliTimer::set(int32_t msFromNow) {
