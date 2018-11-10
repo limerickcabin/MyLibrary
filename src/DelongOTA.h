@@ -1,3 +1,8 @@
+#ifndef delongota_h
+#define delongota_h
+
+#include <ArduinoOTA.h>
+
 boolean _inOTA=false;
 
 boolean inOTA(void) {
@@ -35,4 +40,4 @@ void OTAsetup() {
   ArduinoOTA.begin();
   Serial.println("OTA started");
 }
-
+#endif
