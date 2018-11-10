@@ -11,7 +11,7 @@ char * gettime(void) {
   strcpy(timebuf,ctime(&snap));
   //*strstr(timebuf,"\n")=0;
   strncpy(timebuf, timebuf+11, 8);
-  timebuf[5]=0;
+  timebuf[8]=0;
   return timebuf;
 }
 
