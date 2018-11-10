@@ -2,6 +2,8 @@
 #define delongota_h
 
 #include <ArduinoOTA.h>
+#include <ESPmDNS.h>
+#include <WiFiUdp.h>
 
 boolean _inOTA=false;
 
