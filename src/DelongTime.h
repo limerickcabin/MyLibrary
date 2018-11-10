@@ -1,7 +1,7 @@
 #ifndef delongtime_h
 #define delongtime_h
 
-#define TIMEZONE (-7)
+#define TIMEZONE (-8)
 
 // ascii time stamp tied to NTP
 char timebuf[80];
