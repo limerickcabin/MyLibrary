@@ -1,3 +1,6 @@
+#ifndef delongtime_h
+#define delongtime_h
+
 #define TIMEZONE (-7)
 
 // ascii time stamp tied to NTP
@@ -15,4 +18,4 @@ char * gettime(void) {
 void setupTime(void) {
   configTime(TIMEZONE*3600, 0, "pool.ntp.org");
 }
-
+#endif
