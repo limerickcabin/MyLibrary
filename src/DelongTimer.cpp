@@ -23,6 +23,9 @@ void milliTimer::add(int32_t msExtraTime) {
 }
 
 boolean milliTimer::isExpired(void) {
-      return ((int32_t)millis()-msTimer)>=0;
+      int32_t now=(int32_t)millis();
+      boolean flag = (now-msTimer)>=0;
+      if (!flag) msTimer=now; // keep it expired
+      return flag;
 }
 
