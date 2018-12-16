@@ -25,7 +25,7 @@ void milliTimer::add(int32_t msExtraTime) {
 boolean milliTimer::isExpired(void) {
       int32_t now=(int32_t)millis();
       boolean flag = (now-msTimer)>=0;
-      if ((now-msTimer)<-2,000,000,000) msTimer=now; // keep it expired
+      if ((now-msTimer)<-2000000000) msTimer=now; // HACK: keep it from rolling over
       return flag;
 }
 
