@@ -42,4 +42,8 @@ void OTAsetup() {
   ArduinoOTA.begin();
   Serial.println("OTA started");
 }
+
+void doOTA(void) {
+	ArduinoOTA.handle();
+}
 #endif
