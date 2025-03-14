@@ -15,13 +15,13 @@ void setup() {
   if (timer.doTests()) Serial.println("test OK");
   else Serial.println("tests failed");
   
-  timer.set(5000);
+  timer.set(5000); //will expire 5 seconds from now
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
   if (timer.isExpired()) {
 	  Serial.println("expired, adding 5 seconds");
-	  timer.add(5000);
+	  timer.add(5000); //adds 5 seoonds to the last expire time to keep it synchronous
   }
 }
