@@ -5,11 +5,16 @@
 class milliTimer {
   public:
     milliTimer(void);
-    milliTimer(int32_t msFromNow); 
-    void set(int32_t msFromNow);
-    void add(int32_t msExtraTime);
-    boolean isExpired(void);
+    milliTimer(uint64_t msFromNow); 
+    void set(uint64_t msFromNow);
+    void add(uint64_t msExtraTime);
+    bool isExpired(void);
+	uint64_t llmillis(void);
+	bool doTests(void);
   private:
-    int32_t msTimer;
+    uint64_t msTimer;
+	uint64_t rolloverAdder;
+	uint32_t lastNow;
+	void rollover(void);
 };
 #endif
